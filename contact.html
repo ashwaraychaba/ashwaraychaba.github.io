@@ -85,13 +85,12 @@
                         </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                           <a class="nav-item nav-link" href="index.html">Home</a>
-                           <a class="nav-item nav-link" href="collection.html">Collection</a>
-                           <a class="nav-item nav-link" href="shoes.html">Shoes</a>
-                           <a class="nav-item nav-link" href="racing boots.html">Racing Boots</a>
-                           <a class="nav-item nav-link" href="contact.html">Contact</a>
-                           <a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a>
-                           <a class="nav-item nav-link last" href="contact.html"><img src="images/shop_icon.png"></a>
+		  <a class="nav-item nav-link" href="collection.html" onClick="analytics.track('Collection Clicked', {sampleCollectionProperty: true});">Collection</a>
+                  <a class="nav-item nav-link" href="shoes.html" onClick="analytics.track('Shoes Clicked', {sampleShoesProperty: true});">Shoes</a>
+                  <a class="nav-item nav-link" href="racing boots.html" onClick="analytics.track('Boots Clicked', {sampleBootsProperty: true});">Racing Boots</a>
+                  <a class="nav-item nav-link" href="contact.html" onClick="analytics.track('Contact Clicked', {sampleContactProperty: true});">Contact</a>
+                  <a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a>
+                  <a class="nav-item nav-link last" href="contact.html"><img src="images/shop_icon.png"></a>
                         </div>
                     </div>
                     </nav>
@@ -128,7 +127,7 @@
                           </form>   
                        </div> 
                        <div class="send_btn">
-                        <button class="main_bt" onClick="analytics.identify('JulesId', {firstName: 'Jules',email: 'Jules@gmail.com'}); alert('Request Submitted');">Submit</button>
+                        <button class="main_bt" onClick="analytics.identify('JaneId', {firstName: 'Jane',lastName:'Perry',email: 'Jane@gmail.com'}); alert('Request Submitted');">Submit</button>
                        </div>                   
                     </div>
     		</div>
